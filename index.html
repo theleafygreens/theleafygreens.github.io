@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .music-icons {
+      display:inline;
+  }
+  .fa {
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.about-text{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">The Leafy Greens</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">The Leafy Greens</h3>
+  <img src="img/leafy_logo8.jpg" class="img-responsive img-circle margin" style="display:inline" alt="The Leafy Greens Band Logo" width="350" height="350">
+  <h3>Indie Rock band and vegetable enthusiasts </h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+
+  <h3 id="who" class="margin">Who are we?</h3>
+  <div class = "about-text">
+      <p>The Leafy Greens are an indie rock band who eat their vegetables. They were founded in August of 2018 by Ari Perez, Jonas Bakelaar and Michael Vemvakas. Currently the band's members include Ari Perez, Jonas Bakelaar, Michael Vemvakas, and Saatvik Bhayana.</p>
+      <p> To date, they have released one single called Cut You Some Slack, and is available everywhere you stream music. They continue to work on original music, and will be releasing an album in the coming months.</p>
+  </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id = "contact" class="container-fluid bg-3 text-center">
+  <h3 class="margin">Where To Find Us?</h3><br>
+  <div class="row">
+    <div class="col-md-4">
+      <p>Stream our music</p>
+      <div class = "">
+          <!--<img src="img/Spotify_Icon_CMYK_Green.png" class="img-responsive music-icons margin" style="width:10%" alt="Image">-->
+          <iframe class ="text-center" src="https://open.spotify.com/follow/1/?uri=spotify:artist:5mroq8nWyOr8gqwoeiUiXJ&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; padding-left: 50px; overflow:hidden;" allowtransparency="true"></iframe>
+          <a href='https://play.google.com/music/listen?u=0#/artist/Aysg4c3w2jb7gmwrtukgeeh3ljm/The+Leafy+Greens&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-mu-PartBadge-Mar2515-1'><img alt='Listen to The Leafy Greens on Google Play Music' style="width:30%" src='https://play.google.com/intl/en_us/badges-music/images/badges/en_badge_web_music.png'/></a>
+          <!--<img src="img/google-play-badge.png" class="img-responsive music-icons margin" style="width:30%" alt="Image">-->
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p>Follow us on social media</p>
+      <a href="https://www.facebook.com/therealleafygreens/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/TheLeafyGreens1" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/therealleafygreens/" class="fa fa-instagram"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+
+</body>
+</html>
